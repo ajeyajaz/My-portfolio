@@ -1,0 +1,15 @@
+:root{
+    --color-primary:#D3E97A;
+    --color-secondary:#1A1A1A;
+    --body-color:#0A0A0A;
+    --heading-color:#FFFFFF;
+    --font-body-color:#C7C7C7;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}

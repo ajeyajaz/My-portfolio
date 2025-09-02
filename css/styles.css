@@ -17,7 +17,6 @@ html{
 /* Typography */
 
 body{
-    background-color: var(--body-color);
     color: var(--font-body-color);
     font-family: 'Roboto Condensed','Times New Roman', Times, serif;
     line-height: 1.4;
@@ -59,3 +58,36 @@ p{
   
 }
 
+/* icons */
+.icon-container{
+    background-color: var(--color-secondary);
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    width: 25px;
+    height: 25px;
+}
+
+.icon--white{
+    color: #C7C7C7;
+    transition: color 0.3s;
+}
+
+.icon--white:hover{
+    color: #FFFFFF;
+}
+
+
+@media screen and (min-width:1024px) {
+    
+    .icon-container{
+        width: 58px;
+        height: 58px;
+    }
+}

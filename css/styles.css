@@ -59,6 +59,7 @@ p{
 }
 
 /* icons */
+
 .icon-container{
     background-color: var(--color-secondary);
     width: 48px;
@@ -67,11 +68,14 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.2rem;
+    
 }
 
 .icon{
     width: 25px;
     height: 25px;
+    flex: 1;
 }
 
 .icon--white{
@@ -79,7 +83,7 @@ p{
     transition: color 0.3s;
 }
 
-.icon--white:hover{
+.icon-container:hover .icon--white{
     color: #FFFFFF;
 }
 
@@ -91,3 +95,33 @@ p{
         height: 58px;
     }
 }
+
+/* Buttons */
+
+.btn{
+    text-transform: uppercase;
+    border: 0;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn--primary{
+    background-color: var(--color-primary);
+}
+
+.btn-with-icon{
+    padding: 0.5rem;
+    padding-left: 1rem; 
+}
+
+.btn .icon-container{
+        width: 35px;
+        height: 35px;
+}
+

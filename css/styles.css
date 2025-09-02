@@ -18,6 +18,7 @@ html{
 
 body{
     color: var(--font-body-color);
+    background-color: var(--body-color);
     font-family: 'Roboto Condensed','Times New Roman', Times, serif;
     line-height: 1.4;
     font-size: 2rem;
@@ -75,12 +76,15 @@ p{
 .icon{
     width: 25px;
     height: 25px;
-    flex: 1;
 }
 
 .icon--white{
     color: #C7C7C7;
     transition: color 0.3s;
+}
+
+.icon-container .icon{
+    flex: 1;    
 }
 
 .icon-container:hover .icon--white{
@@ -125,3 +129,83 @@ p{
         height: 35px;
 }
 
+
+/* list */
+
+.list{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/* collapsible */
+
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.collapsible--expanded .collapsible__content{
+    max-height: 100vh;
+}
+
+
+/* Navigation bar */
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav__brand{
+    padding: 0.5rem 2rem;
+    margin-bottom: 0;
+}
+
+
+.nav__list{
+    width: 100%;
+    margin: 0;
+}
+
+.nav__item{
+    border-bottom: 1px solid #d6d3d3b8;
+    padding: 0.5rem 2rem;
+    text-transform: capitalize;
+}
+
+
+.collapsible--expanded .nav__toggler{
+    transform: rotate(-90deg);
+    color: #FFFFFF;
+}
+
+
+.nav__brand, .nav__item{
+    transition: color 0.3s ease-out;
+}
+
+.nav__item:hover, .nav__brand:hover{
+    color: #FFFFFF;
+}
+
+@media screen and (min-width:768px) {
+
+    .nav__toggler{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        width: auto;
+        max-height: 100vh;
+        overflow: visible;
+    }
+
+    .nav__item{
+        border-bottom: 0;
+    }
+
+    
+}

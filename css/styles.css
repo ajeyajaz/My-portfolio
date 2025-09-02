@@ -150,6 +150,32 @@ p{
 }
 
 
+/* Blocks */
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.block__header{
+    margin: 1rem 0;
+}
+
+
+/* Grids */
+
+.grid{
+    display: grid;
+}
+
+@media screen and (min-width:768px){
+
+    .grid--1x2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
 /* Navigation bar */
 
 .nav{

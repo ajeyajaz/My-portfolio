@@ -110,23 +110,24 @@ p{
     font-weight: 500;
     font-size: 1.5rem;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
+
+    
 }
 
 .btn--primary{
     background-color: var(--color-primary);
 }
 
-.btn-with-icon{
-    padding: 0.5rem;
-    padding-left: 1rem; 
+.btn .icon-container{
+        width: 40px;
+        height: 40px;
+        position: relative;
+        left :30px;   
 }
 
-.btn .icon-container{
-        width: 35px;
-        height: 35px;
+.btn--streched{
+    padding: 1rem 4rem;
 }
 
 
@@ -152,14 +153,16 @@ p{
 
 /* Blocks */
 
+.block{
+    padding: 6rem, 2rem;
+}
+
 .container{
     max-width: 1140px;
     margin: 0 auto;
 }
 
-.block__header{
-    margin: 1rem 0;
-}
+
 
 
 /* Grids */
@@ -233,5 +236,34 @@ p{
         border-bottom: 0;
     }
 
+}
+
+/* Contact Container */
+.contact-container{
+    display: flex;
+    gap: 20px;
+}
+
+/* Block-hero */
+
+.hero__image{
+    width: 100%;
+    display: none;
+}
+
+
+@media screen and (min-width:769px) {
+
+    .hero__image{
+        display: block;
+        border: 1px solid wheat;
+        border-radius: 10px;
+        opacity: 0.5;
+    }
+
+    .hero_header{
+        align-self: center;
+    }
     
 }
+

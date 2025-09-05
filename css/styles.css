@@ -435,4 +435,9 @@ input, textarea{
     color: var(--font-body-color);
 }
 
+/* footer */
+
+.footer__copyright{
+    text-align: center;
+}
     

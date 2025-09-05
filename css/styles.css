@@ -130,6 +130,22 @@ p{
     padding: 1rem 4rem;
 }
 
+.url--container{
+    margin-top: 3rem;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.url--container > a{
+    text-decoration: none;
+    color: var(--color-primary);
+}
+
+.url--container .icon{
+    height: 2rem;
+}
+
 
 /* list */
 
@@ -138,6 +154,18 @@ p{
     padding-left: 0;
 }
 
+.project__list{
+  /* need to do */
+  margin: 1rem 0;
+}
+
+.project__item{
+    border-top: 1px solid #C7C7C7;
+    border-bottom:1px solid #C7C7C7;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 /* collapsible */
 
@@ -156,13 +184,21 @@ p{
 .block{
     padding: 6rem, 2rem;
 }
+.block__header{
+    padding: 64px 0;
+}
 
 .container{
     max-width: 1140px;
     margin: 0 auto;
 }
 
+@media screen and (min-width:768px) {
 
+    .block__header{
+        padding: 80px 0;
+    }
+}
 
 
 /* Grids */
@@ -275,6 +311,35 @@ p{
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
+.photo-container >img{
+    width: 100%;
+}
+
+/* Project Block */
+
+.project-block .grid{
+    row-gap: 30px;
+}
+
+.project{
+    margin-bottom: 96px;
+}
+
+.project__heading{
+    margin-top: 0;
+}
+.project-info__heading{
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+@media screen and (min-width:769px) {
+    
+    .project-block .grid{
+        column-gap: 48px;
+    }
+}

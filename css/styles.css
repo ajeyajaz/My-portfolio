@@ -14,6 +14,11 @@ html{
     font-size: 62.5%;
 }
 
+a{
+    text-decoration: none;
+    color: var(--font-body-color);
+}
+
 /* Typography */
 
 body{
@@ -125,7 +130,6 @@ p{
         position: relative;
         left :30px;   
 }
-
 .btn--streched{
     padding: 1rem 4rem;
 }
@@ -343,3 +347,92 @@ p{
         column-gap: 48px;
     }
 }
+
+
+/* Author Block */
+
+.author .grid{
+    /* padding: 2rem 0; */
+    row-gap: 2rem;
+    margin-bottom: 6rem;
+}
+
+.author__heading{
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.author .contact-container{
+    margin-top: 3rem;
+}
+
+.author__skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.author__skills >img{
+    width: 4rem;
+    height: 5rem;
+}
+
+.skill__heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width:769px) {
+
+    .author .grid{
+        margin-bottom: 8rem;
+    }
+}
+
+/* connect block */
+
+.connect-block .grid{
+    row-gap: 6rem;
+}
+
+.connect__heading{
+    margin-top: 0;
+}
+.connect__header >p{
+    margin-bottom: 1rem;
+}
+
+.connect__header .contact-container{
+    margin-top: 4rem;
+}
+
+.connect__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.connect__form input{
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (min-width:1024px) {
+    
+    .connect__header{
+        align-self: center;
+    }
+}
+
+
+/* Input Fields */
+
+input, textarea{
+    border: 0;
+    outline: none;
+    border-radius: 3px;
+    background-color: var(--color-secondary);
+    padding: 1rem;
+    color: var(--font-body-color);
+}
+
+    

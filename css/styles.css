@@ -267,3 +267,14 @@ p{
     
 }
 
+/* Photo container */
+
+.photo-container{
+    align-items: center;
+    background-color: var(--color-secondary);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+

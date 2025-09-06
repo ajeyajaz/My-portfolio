@@ -15,8 +15,179 @@
 </head>
 
 <body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="nav collapsible">
+            <a href="#"><img class="nav__brand" src="images/logo.svg" alt="AJAY Logo"></a>
+            <svg class="icon nav__toggler">
+                <use xlink:href="images/sprite.svg#Frame"></use>
+            </svg>
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="#">home</a></li>
+                <li class="nav__item"><a href="#author-block">about</a></li>
+                <li class="nav__item"><a href="">Skills</a></li>
+                <li class="nav__item"><a href="">services</a></li>
+                <li class="nav__item"><a href="#connect-block">contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <!-- Hero Block -->
+    <section class="block container hero">
+        <div class="grid">
+            <header class="hero__header">
+                <h1 class="hero__heading">HI, I AM <span>AJAY.</span></h1>
+                <p>A passionate full-stack developer based in India, focused on building modern, scalable, and
+                    user-friendly web applications. I love turning ideas into reality through clean code,
+                    problem-solving, and continuous learning.</p>
+            </header>
+
+            <button class="btn btn--primary hero-rusume__btn">download resume
+                <img src="images/download.svg" alt="">
+            </button>
+
+            <!-- social icons -->
+            <div class="contact-container">
+                <div class="icon-container">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#linkedin"></use>
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#github"></use>
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#instagram"></use>
+                    </svg>
+                </div>
+                <div class="icon-container">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#github"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Block -->
+    <section class="block container project-block">
+        <header class="block__header">
+            <h2 class="project__heading">Featured Projects</h2>
+            <p>Here are some of the selected projects that showcase my passion for front-end development.</p>
+        </header>
+
+        <div class="grid grid--1x2 project">
+            <div class="photo-container">
+                <img src="images/project_template/healthcare_system.png" alt="healthcare_system UI">
+            </div>
+
+            <div>
+                <h3>Promotional landing page for our favorite show</h3>
+                <p>Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure
+                    Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating
+                    a newsletter feature to keep fans updated with the latest adventures.</p>
+                <h4 class="project-info__heading">Project Info</h4>
+                <ul class="list project__list">
+                    <li class="project__item">Year <span>2023</span></li>
+                    <li class="project__item">Role <span>front-end</span></li>
+                </ul>
+                <span class="url--btn project__url"><a href="#">SEE ON GITHUB<svg class="icon">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg></a></span>
+            </div>
+        </div>
+
+        <div class="grid grid--1x2 project">
+            <div class="photo-container">
+                <img src="images/project_template/gardening.png" alt="Gardening app UI">
+            </div>
+
+            <div>
+                <h3>Promotional landing page for our favorite show</h3>
+                <p>Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure
+                    Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating
+                    a newsletter feature to keep fans updated with the latest adventures.</p>
+                <h4 class="project-info__heading">Project Info</h4>
+                <ul class="list project__list">
+                    <li class="project__item">Year <span>2023</span></li>
+                    <li class="project__item">Role <span>front-end</span></li>
+                </ul>
+                <span class="url--btn"><a href="#">SEE ON GITHUB <svg class="icon icon--white">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg></a></span>
+            </div>
+        </div>
+    </section>
     
+    <!-- About Block -->
+    <section class="block container author" id="author-block">
+        <div class="grid grid--1x2">
+            <h2 class="author__heading">About Me</h2>
+            <div class="author__description">
+                I am a front-end developer based in Sydney. Has Mechanical Engineering background.
+                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical
+                Engineering background. Likes to focus on accessibility when developing. Passionate and curious about
+                solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not
+                programming, I enjoy playing football, photography and playing Valorant
+
+                <span class="url--btn"><a href="">MORE ABOUT ME<svg class="icon">
+                            <use xlink:href="images/sprite.svg#arrow"></use></a></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Connect Block -->
+    <section class="block container connect" id="connect-block">
+        <div class="grid grid--1x2">
+            <header class="connect__header">
+                <h2 class="connect__heading">Let’s connect</h2>
+                <p> Say hello at <a href="mailto:ajeyaz@gmail.com">ajeyajaz@gmail.com</a></p>
+                <p> For more info, here’s <a href="">my resume</a></p>
+                <div class="contact-container">
+                    <div class="icon-container">
+                        <svg class="icon icon--white">
+                            <use xlink:href="images/sprite.svg#linkedin"></use>
+                        </svg>
+                    </div>
+                    <div class="icon-container">
+                        <svg class="icon icon--white">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg>
+                    </div>
+                    <div class="icon-container">
+                        <svg class="icon icon--white">
+                            <use xlink:href="images/sprite.svg#instagram"></use>
+                        </svg>
+                    </div>
+                </div>
+            </header>
+            <form action="https://formspree.io/f/xrblrdwe" method="post" class="connect__form">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject" required>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+
+                <button class="btn btn--primary contact-submit__btn btn--hover" type="submit">cantact</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer__copyright">&copy;ajeyajaz</p>
+    </footer>
 
     <script src="js/main.js"></script>
 

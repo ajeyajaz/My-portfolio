@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 60" role="img" aria-label="AJAY logo">
+  <style>
+    .txt {
+      font: 700 48px system-ui, -apple-system, "Segoe UI", Roboto, Inter, Arial, sans-serif;
+      letter-spacing: 2px;
+      fill: #ffffff;
+    }
+    .cursor {
+      animation: blink 1s steps(1, end) infinite;
+    }
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+  </style>
+
+  <rect width="100%" height="100%" fill="#000000"/>
+  <text x="0" y="48" class="txt">
+    <tspan>AJAY</tspan><tspan class="cursor">_</tspan>
+  </text>
+</svg>

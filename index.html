@@ -22,11 +22,13 @@
             <svg class="icon nav__toggler">
                 <use xlink:href="images/sprite.svg#Frame"></use>
             </svg>
+
+            <!-- Nav elements -->
             <ul class="list nav__list collapsible__content">
                 <li class="nav__item"><a href="#">home</a></li>
-                <li class="nav__item"><a href="#author-block">about</a></li>
-                <li class="nav__item"><a href="">Skills</a></li>
-                <li class="nav__item"><a href="">services</a></li>
+                <li class="nav__item"><a href="#about-block">about</a></li>
+                <li class="nav__item"><a href="about.html#skill-block">Skills</a></li>
+                <li class="nav__item"><a href="about.html#certifacates">Certifications</a></li>
                 <li class="nav__item"><a href="#connect-block">contact</a></li>
             </ul>
         </nav>
@@ -42,31 +44,30 @@
                     problem-solving, and continuous learning.</p>
             </header>
 
-            <button class="btn btn--primary hero-rusume__btn">download resume
-                <img src="images/download.svg" alt="">
-            </button>
+            <a class="btn btn--primary hero-rusume__btn" href="images/resume/ajay_resume.pdf" download>download
+                resume <img src="images/download.svg" alt=""></a>
 
             <!-- social icons -->
             <div class="contact-container">
                 <div class="icon-container">
-                    <svg class="icon icon--white">
-                        <use xlink:href="images/sprite.svg#linkedin"></use>
-                    </svg>
+                    <a href="https://www.linkedin.com/in/ajeyajaz/"><svg class="icon">
+                            <use xlink:href="images/sprite.svg#linkedin"></use>
+                        </svg></a>
                 </div>
                 <div class="icon-container">
-                    <svg class="icon icon--white">
-                        <use xlink:href="images/sprite.svg#github"></use>
-                    </svg>
+                    <a href="https://github.com/ajeyajaz/"><svg class="icon">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg></a>
                 </div>
                 <div class="icon-container">
-                    <svg class="icon icon--white">
-                        <use xlink:href="images/sprite.svg#instagram"></use>
-                    </svg>
+                    <a href="https://github.com/ajeyajaz/"><svg class="icon">
+                            <use xlink:href="images/sprite.svg#instagram"></use>
+                        </svg></a>
                 </div>
                 <div class="icon-container">
-                    <svg class="icon icon--white">
-                        <use xlink:href="images/sprite.svg#github"></use>
-                    </svg>
+                    <a href="https://github.com/ajeyajaz/"><svg class="icon">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg></a>
                 </div>
             </div>
         </div>
@@ -79,62 +80,65 @@
             <p>Here are some of the selected projects that showcase my passion for front-end development.</p>
         </header>
 
+        <!-- Project -->
         <div class="grid grid--1x2 project">
-            <div class="photo-container">
+            <div class="card">
                 <img src="images/project_template/healthcare_system.png" alt="healthcare_system UI">
             </div>
 
             <div>
-                <h3>Promotional landing page for our favorite show</h3>
-                <p>Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure
-                    Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating
-                    a newsletter feature to keep fans updated with the latest adventures.</p>
+                <h3>Django Healthcare Backend</h3>
+                <p>A secure and scalable backend system for managing doctors, patients, and their relationships, built
+                    using Django, Django REST Framework (DRF), PostgreSQL, and JWT authentication.</p>
                 <h4 class="project-info__heading">Project Info</h4>
-                <ul class="list project__list">
-                    <li class="project__item">Year <span>2023</span></li>
-                    <li class="project__item">Role <span>front-end</span></li>
+                <ul class="list content--list">
+                    <li class="content__item">Year <span>2025</span></li>
+                    <li class="content__item">Role <span>Backend</span></li>
                 </ul>
-                <span class="url--btn project__url"><a href="#">SEE ON GITHUB<svg class="icon">
+                <span class="url--btn project__url"><a
+                        href="https://github.com/ajeyajaz/healthcare_backend_django.git">SEE ON GITHUB<svg class="icon">
                             <use xlink:href="images/sprite.svg#github"></use>
                         </svg></a></span>
             </div>
         </div>
-
+        <!-- Project -->
         <div class="grid grid--1x2 project">
-            <div class="photo-container">
+            <div class="card">
                 <img src="images/project_template/gardening.png" alt="Gardening app UI">
             </div>
 
             <div>
-                <h3>Promotional landing page for our favorite show</h3>
-                <p>Teamed up with a designer to breathe life into a promotional webpage for our beloved show, Adventure
-                    Time. Delivered a fully responsive design with dynamic content capabilities, seamlessly integrating
-                    a newsletter feature to keep fans updated with the latest adventures.</p>
+                <h3>Community Gardening App – Backend API</h3>
+                <p>This is a Django REST Framework-based backend for a community gardening platform. Users can register,
+                    create and join events, comment, and receive notifications for updates and discussions. </p>
+
                 <h4 class="project-info__heading">Project Info</h4>
-                <ul class="list project__list">
-                    <li class="project__item">Year <span>2023</span></li>
-                    <li class="project__item">Role <span>front-end</span></li>
+                <ul class="list content--list">
+                    <li class="content__item">Year <span>2025</span></li>
+                    <li class="content__item">Role <span>Backend</span></li>
                 </ul>
-                <span class="url--btn"><a href="#">SEE ON GITHUB <svg class="icon icon--white">
+                <span class="url--btn"><a href="https://github.com/ajeyajaz/communityGardeningApp.git">SEE ON GITHUB
+                        <svg class="icon">
                             <use xlink:href="images/sprite.svg#github"></use>
                         </svg></a></span>
             </div>
         </div>
+        <div class="project-btn-container">
+            <a class="btn btn--primary btn--hover" href="projects.html" target="_blank">more projects</a>
+        </div>
     </section>
-    
+
     <!-- About Block -->
-    <section class="block container author" id="author-block">
+    <section class="block container author" id="about-block">
         <div class="grid grid--1x2">
             <h2 class="author__heading">About Me</h2>
             <div class="author__description">
-                I am a front-end developer based in Sydney. Has Mechanical Engineering background.
-                I am a front-end developer based in Sydney looking for exciting opportunities. Has Mechanical
-                Engineering background. Likes to focus on accessibility when developing. Passionate and curious about
-                solving problems. Currently, I’m exploring Reactjs, Webflow and a bit of Designing. While I am not
-                programming, I enjoy playing football, photography and playing Valorant
-
-                <span class="url--btn"><a href="">MORE ABOUT ME<svg class="icon">
-                            <use xlink:href="images/sprite.svg#arrow"></use></a></span>
+                <p>Hi, I’m Ajay H, a B.E. student in Information Science and a passionate Full Stack Developer. I
+                    specialize in building web applications with Python, Django, SQL, and REST APIs on the backend, and
+                    HTML, CSS, and JavaScript on the frontend to deliver seamless user experiences.</p>
+                <span class="url--btn"><a href="about.html">MORE ABOUT ME<svg class="icon">
+                            <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg> </a></span>
             </div>
         </div>
     </section>
@@ -148,34 +152,35 @@
                 <p> For more info, here’s <a href="">my resume</a></p>
                 <div class="contact-container">
                     <div class="icon-container">
-                        <svg class="icon icon--white">
-                            <use xlink:href="images/sprite.svg#linkedin"></use>
-                        </svg>
+                        <a href="https://www.linkedin.com/in/ajeyajaz/"><svg class="icon">
+                                <use xlink:href="images/sprite.svg#linkedin"></use>
+                            </svg></a>
                     </div>
                     <div class="icon-container">
-                        <svg class="icon icon--white">
-                            <use xlink:href="images/sprite.svg#github"></use>
-                        </svg>
+                        <a href="https://github.com/ajeyajaz/"><svg class="icon">
+                                <use xlink:href="images/sprite.svg#github"></use>
+                            </svg></a>
                     </div>
                     <div class="icon-container">
-                        <svg class="icon icon--white">
-                            <use xlink:href="images/sprite.svg#instagram"></use>
-                        </svg>
+                        <a href="https://www.linkedin.com/in/ajeyajaz/"><svg class="icon">
+                                <use xlink:href="images/sprite.svg#instagram"></use>
+                            </svg></a>
                     </div>
                 </div>
             </header>
+            <!-- Connect Form -->
             <form action="https://formspree.io/f/xrblrdwe" method="post" class="connect__form">
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
+                <input type="text" name="name" id="name" required maxlength="255">
 
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required maxlength="255">
 
                 <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" required>
+                <input type="text" name="subject" id="subject" required maxlength="255">
 
                 <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+                <textarea name="message" id="message" maxlength="255"></textarea>
 
                 <button class="btn btn--primary contact-submit__btn btn--hover" type="submit">cantact</button>
             </form>
@@ -186,14 +191,13 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="footer__copyright">&copy;ajeyajaz</p>
+        <h4 class="footer__heading">Contact me</h4>
+        <div class="contact-container">
+            <a class="btn btn--primary btn--hover" href="tel:+918618574994">call me</a>
+            <a class="btn  btn--primary btn--hover" href="mailto:ajeyajaz@gmail.com">email me</a>
+        </div>
     </footer>
-
     <script src="js/main.js"></script>
-
 </body>
-
-</div>
-
 
 </html>

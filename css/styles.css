@@ -16,7 +16,7 @@ html{
 
 a{
     text-decoration: none;
-    color: var(--font-body-color);
+    color: var(--body-color);
 }
 
 /* Typography */
@@ -74,23 +74,22 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
     cursor: pointer;
 }
 
-.icon{
+.icon {
     width: 25px;
     height: 25px;
-    color: var(--color-primary);
+    fill : var(--color-primary);
 }
 
-.icon--white{
-    fill: #FFFFFF;
+.icon-container a{
+    width: 25px;
+    height: 25px;
 }
 
-.icon-container .icon{
-    flex: 1;    
-}
+
+
 
 .icon{
     transition: all 0.3s;
@@ -109,6 +108,8 @@ p{
         width: 58px;
         height: 58px;
     }
+
+    
 }
 
 /* Buttons */
@@ -125,6 +126,12 @@ p{
     cursor: pointer;
     gap: 1rem;
     outline: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.icon{
+    color:var(--color-primary)
 }
 
 .btn--primary{
@@ -138,7 +145,7 @@ p{
         left :30px;   
 }
 
-    .url--btn{
+.url--btn{
     margin-top: 3rem;
     display: inline-block;
     text-decoration: none;
@@ -154,6 +161,9 @@ p{
     height: 1.5rem;
 }
 
+.btn--hover:hover{
+    transform: scale(1.1);
+}
 
 /* list */
 
@@ -162,12 +172,12 @@ p{
     padding-left: 0;
 }
 
-.project__list{
+.content--list{
   /* need to do */
   margin: 1rem 0;
 }
 
-.project__item{
+.content__item{
     border-top: 1px solid #C7C7C7;
     border-bottom:1px solid #C7C7C7;
     padding: 1rem 0;
@@ -189,9 +199,6 @@ p{
 
 /* Blocks */
 
-.block{
-    padding: 6rem, 2rem;
-}
 .block__header{
     padding: 64px 0;
 }
@@ -215,12 +222,19 @@ p{
     display: grid;
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width:850px){
 
     .grid--1x2{
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+}
+
+@media screen and (min-width:1024px){
+
+    .grid--1x3{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 /* Navigation bar */
@@ -247,6 +261,10 @@ p{
     border-bottom: 1px solid #d6d3d3b8;
     padding: 1rem 1.6rem;
     text-transform: capitalize;
+}
+
+.nav__item a{
+    color: var(--font-body-color);
 }
 
 
@@ -286,7 +304,7 @@ p{
 /* Contact Container */
 .contact-container{
     display: flex;
-    gap: 20px;
+    gap: 2rem;
 }
 
 /* Block-hero */
@@ -316,26 +334,34 @@ p{
 }
 
 
-/* Photo container */
+/* Card */
 
-.photo-container{
+.card{
     align-items: center;
     background-color: var(--color-secondary);
     border-radius: 10px;
     display: flex;
     justify-content: center;
+
     padding: 40px 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-.photo-container >img{
+.card >img{
     width: 100%;
 }
+
+.card--hover:hover{
+    transform: translateY(-5px);
+}
+
 
 /* Project Block */
 
 .project-block .grid{
     row-gap: 30px;
 }
+
 
 .project{
     margin-bottom: 96px;
@@ -351,6 +377,35 @@ p{
     font-weight: normal;
 }
 
+.projects-block .project__heading{
+    text-align: center;
+}
+
+.projects-block .card{
+    flex-direction: column;
+    max-width: 400px;
+    margin: 2rem;
+}
+
+.projects-block .grid{
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.project__title{
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+.project-btn-container{
+ display: flex;
+ justify-content: center;
+}
+
+
 @media screen and (min-width:769px) {
     
     .project-block .grid{
@@ -360,9 +415,6 @@ p{
 
 
 /* Author Block */
-
-
-
 
 
 .author .grid{
@@ -392,7 +444,7 @@ p{
 }
 
 .skill__heading{
-    text-align: center;
+
     text-transform: uppercase;
 }
 
@@ -458,18 +510,97 @@ input, textarea{
     color: var(--font-body-color);
 }
 
-/* footer */
+/* Progress-bar */
+ .progress-container {
+      height: 5px;
+      background: #e5e7eb;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 1px 1px #121315;
+    }
 
-.footer{
-    margin-top: 2rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ .progress-bar {
+      width: 70%;             
+      height: 100%;
+      background: #3b82f6;    
+      border-radius: 10px 0 0 10px;
+    }
 
+
+/* skill section */
+.skill .grid{
+    gap: 3rem;
+}
+.skill__name{
+    margin-top: 1rem;
+    text-transform: uppercase;
 }
 
-.footer__copyright{
+.html--progress{
+    width: 95%;
+}
+
+.css--progress{
+    width: 90%;
+}
+
+.twcss--progress{
+    width: 80%;
+}
+
+.js--progress{
+    width: 70%;
+}
+
+.py--progress{
+    width: 85%;
+}
+
+.django--progress{
+    width: 80%;
+}
+
+.git--progress{
+    width: 80%;
+}
+
+
+/* Certificate */
+
+.certification-block{
+    margin-bottom: 5rem;
+}
+
+.certification-block .grid{
+    gap: 2rem;
+    
+}
+.certiticate .card{
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+}
+
+.certification__heading{
+    text-transform: uppercase;
     text-align: center;
 }
-    
+
+/* Footer */
+
+.footer{
+    background-color: #141212b1;
+    padding: 2rem;
+    margin-top: 5rem;
+}
+
+.footer .contact-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__heading{
+    text-align: center;
+    text-transform: uppercase;
+}
+

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100;400;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- Navigation Bar -->
+        <nav class="nav collapsible">
+            <a href="#"><img class="nav__brand" src="images/logo.svg" alt="AJAY Logo"></a>
+            <svg class="icon nav__toggler">
+                <use xlink:href="images/sprite.svg#Frame"></use>
+            </svg>
+            <!-- Nav elements -->
+            <ul class="list nav__list collapsible__content">
+                <li class="nav__item"><a href="index.html">home</a></li>
+                <li class="nav__item"><a href="#skill-block">Skills</a></li>
+                <li class="nav__item"><a href="projects.html">Projects</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Block -->
+    <section class="block container author">
+        <div class="grid grid--1x2">
+            <h2 class="author__heading">About Me</h2>
+            <div class="author__description">
+                <p>
+                    Hi, I’m Ajay H, a B.E. student in Information Science and a passionate Full Stack Developer. I
+                    specialize in building web applications with Python, Django, SQL, and REST APIs on the backend, and
+                    HTML, CSS, and JavaScript on the frontend to deliver seamless user experiences.
+                </p>
+                <p> Coming from a Diploma in Mechanical Engineering, I bring strong problem-solving skills and logical
+                    thinking to software development. Over time, I have built projects ranging from smart file
+                    organizers to data visualization platforms and end-to-end Django applications with authentication,
+                    APIs, and real-time monitoring.</p>
+                <div class="contact-container">
+                    <span class="url--btn"><a href="index.html#connect-block">LET'S CONNECT<svg class="icon">
+                                <use xlink:href="images/sprite.svg#arrow"></use>
+                            </svg> </a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Block -->
+    <section class="block container skill" id="skill-block">
+        <div class="grid grid--1x2">
+            <header>
+                <h2 class="skill__heading">My Capabilities</h2>
+            </header>
+            <div>
+                <p>I am always eager to learn and expand my skill set as a developer. With a strong foundation in both
+                    backend and frontend technologies, I can design and build complete web applications from scratch.
+                </p>
+                <h3> Technologies I’ve been working with recently</h3>
+
+                <div class="skill__progress">
+                    <div class="skill__name">HTML</div>
+                    <div class="progress-container">
+                        <div class="progress-bar html--progress"></div>
+                    </div>
+
+                    <div class="skill__name">CSS</div>
+                    <div class="progress-container">
+                        <div class="progress-bar css--progress"></div>
+                    </div>
+
+                    <div class="skill__name">Tailwind Css</div>
+                    <div class="progress-container">
+                        <div class="progress-bar twcss--progress"></div>
+                    </div>
+
+                    <div class="skill__name">Javascript</div>
+                    <div class="progress-container">
+                        <div class="progress-bar js--progress"></div>
+                    </div>
+
+                    <div class="skill__name">Python</div>
+                    <div class="progress-container">
+                        <div class="progress-bar py--progress"></div>
+                    </div>
+
+                    <div class="skill__name">Django</div>
+                    <div class="progress-container">
+                        <div class="progress-bar django--progress"></div>
+                    </div>
+
+                    <div class="skill__name">Git</div>
+                    <div class="progress-container">
+                        <div class="progress-bar git--progress"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification Block -->
+    <section class="block container certification-block" id="certifacates">
+        <header class="block__header">
+            <h2 class="certification__heading">Certifications</h2>
+        </header>
+        <div class="grid grid--1x2 grid--1x3 certiticate">
+            <div class="card card--hover">
+                <h3>Full stack Hackathon</h3>
+                <p>University of Michigan - Coursera</p>
+                <span class="url--btn"><a href="images/certifications/cert3.png" target="_blank">View Certificate<svg
+                            class="icon">
+                            <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg> </a></span>
+            </div>
+            <div class="card card--hover">
+                <h3>The HTML5 & CSS3</h3>
+                <p>University of Michigan - Coursera</p>
+                <span class="url--btn"><a href="images/certifications/html-css.pdf" target="_blank">View
+                        Certificate<svg class="icon">
+                            <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg> </a></span>
+            </div>
+            <div class="card card--hover">
+                <h3>Python for Everybody</h3>
+                <p>University of Michigan - Coursera</p>
+                <span class="url--btn"><a href="images/certifications/cert1.png" target="_blank">View Certificate<svg
+                            class="icon">
+                            <use xlink:href="images/sprite.svg#arrow"></use>
+                        </svg> </a></span>
+            </div>
+
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

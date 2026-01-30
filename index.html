@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,6 @@
     <header>
         <!-- Navigation Bar -->
         <nav class="nav collapsible">
-            <a href="#"><img class="nav__brand" src="images/logo.svg" alt="AJAY Logo"></a>
             <svg class="icon nav__toggler">
                 <use xlink:href="images/sprite.svg#Frame"></use>
             </svg>
@@ -39,7 +38,7 @@
         <div class="grid">
             <header class="hero__header">
                 <h1 class="hero__heading">HI, I AM <span>AJAY.</span></h1>
-                <p>A passionate full-stack developer based in India, focused on building modern, scalable, and
+                <p>A full-stack developer based in India, focused on building modern, scalable, and
                     user-friendly web applications. I love turning ideas into reality through clean code,
                     problem-solving, and continuous learning.</p>
             </header>
@@ -74,57 +73,103 @@
     </section>
 
     <!-- Project Block -->
-    <section class="block container project-block">
+    <section class="container project-block">
         <header class="block__header">
             <h2 class="project__heading">Featured Projects</h2>
-            <p>Here are some of the selected projects that showcase my passion for front-end development.</p>
+            <p>Here are some of the selected projects that showcase my passion for web development.</p>
         </header>
 
         <!-- Project -->
         <div class="grid grid--1x2 project">
             <div class="card">
-                <img src="images/project_template/healthcare_system.png" alt="healthcare_system UI">
+                <img src="images/project_template/ecommerce-frontend.png" alt="E-commerce project frontend">
+
+
             </div>
 
             <div>
-                <h3>Django Healthcare Backend</h3>
-                <p>A secure and scalable backend system for managing doctors, patients, and their relationships, built
-                    using Django, Django REST Framework (DRF), PostgreSQL, and JWT authentication.</p>
-                <h4 class="project-info__heading">Project Info</h4>
-                <ul class="list content--list">
-                    <li class="content__item">Year <span>2025</span></li>
-                    <li class="content__item">Role <span>Backend</span></li>
-                </ul>
-                <span class="url--btn project__url"><a
-                        href="https://github.com/ajeyajaz/healthcare_backend_django.git">SEE ON GITHUB<svg class="icon">
-                            <use xlink:href="images/sprite.svg#github"></use>
-                        </svg></a></span>
-            </div>
-        </div>
-        <!-- Project -->
-        <div class="grid grid--1x2 project">
-            <div class="card">
-                <img src="images/project_template/gardening.png" alt="Gardening app UI">
-            </div>
-
-            <div>
-                <h3>Community Gardening App – Backend API</h3>
-                <p>This is a Django REST Framework-based backend for a community gardening platform. Users can register,
-                    create and join events, comment, and receive notifications for updates and discussions. </p>
+                <h3>ShoppyGlobe E-commerce Application</h3>
+                <p>
+                    A modern e-commerce web application that allows users to explore products,
+                    manage shopping carts, and complete transactions with a smooth and responsive UI.
+                    Built using React, React Router, and Redux with real-time product data integration.
+                </p>
 
                 <h4 class="project-info__heading">Project Info</h4>
                 <ul class="list content--list">
-                    <li class="content__item">Year <span>2025</span></li>
-                    <li class="content__item">Role <span>Backend</span></li>
+                    <li class="content__item">Year <span>2025 – 2026</span></li>
+                    <li class="content__item">Role <span>Frontend Developer</span></li>
+                    <li class="content__item">Tech <span>React, Redux, JavaScript</span></li>
                 </ul>
-                <span class="url--btn"><a href="https://github.com/ajeyajaz/communityGardeningApp.git">SEE ON GITHUB
+
+                <span class="url--btn project__url">
+                    <a href="https://github.com/ajeyajaz/shoppyGlobe-E-commerce.git">
+                        SEE ON GITHUB
                         <svg class="icon">
                             <use xlink:href="images/sprite.svg#github"></use>
-                        </svg></a></span>
+                        </svg>
+                    </a>
+                </span>
             </div>
-        </div>
-        <div class="project-btn-container">
-            <a class="btn btn--primary btn--hover" href="projects.html" target="_blank">more projects</a>
+            <div class="card">
+                <img src="./images/project_template/ecommerce-backend.png"
+                    alt="Backend API project template">
+
+            </div>
+
+            <div>
+                <h3>ShoppyGlobe Backend APIs</h3>
+                <p>
+                    Developed scalable RESTful APIs for the ShoppyGlobe platform using Node.js
+                    and Express.js. Implemented JWT-based authentication and MongoDB for efficient
+                    data storage and secure user services.
+                </p>
+
+                <h4 class="project-info__heading">Project Info</h4>
+                <ul class="list content--list">
+                    <li class="content__item">Year <span>2026</span></li>
+                    <li class="content__item">Role <span>Backend Developer</span></li>
+                    <li class="content__item">Tech <span>Node.js, Express.js, MongoDB</span></li>
+                </ul>
+
+                <span class="url--btn project__url">
+                    <a href="https://github.com/ajeyajaz/shoppyGlobe-E-commerce-backend.git">
+                        SEE ON GITHUB
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+
+            <div class="card">
+                <img src="./images/project_template/game-hub.png" alt="GameHub UI">
+            </div>
+
+            <div>
+                <h3>GameHub – Video Game Discovery Platform</h3>
+                <p>
+                    A feature-rich video game discovery platform built with React and Tailwind CSS.
+                    Integrated the RAWG public API to display real-time game data with advanced
+                    search, filtering, sorting, and smooth loading states.
+                </p>
+
+                <h4 class="project-info__heading">Project Info</h4>
+                <ul class="list content--list">
+                    <li class="content__item">Year <span>2025 – Present</span></li>
+                    <li class="content__item">Role <span>Frontend Developer</span></li>
+                    <li class="content__item">Tech <span>React, Tailwind CSS, REST API</span></li>
+                </ul>
+
+                <span class="url--btn project__url">
+                    <a href="https://github.com/ajeyajaz/game-hub.git">
+                        SEE ON GITHUB
+                        <svg class="icon">
+                            <use xlink:href="images/sprite.svg#github"></use>
+                        </svg>
+                    </a>
+                </span>
+            </div>
         </div>
     </section>
 
